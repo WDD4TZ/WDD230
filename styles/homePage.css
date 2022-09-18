@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+
+header {
+    background-color: rgb(157, 177, 122);
+    font-family: Poppins, "Avenier Next LT Pro Demi", "Arial Nova";
+    text-align: center;
+}
+
+nav ul li {
+    font-family: Poppins, "Avenier Next LT Pro Demi", "Arial Nova";
+    list-style-position: inside;
+    text-align: center;
+}
+
+footer {
+    background-color: rgb(157, 177, 122);
+    font-family: Poppins, "Avenier Next LT Pro Demi", "Arial Nova";
+    font-size: 20px;
+    text-align: center;
+}
+
+/*The following must be after all other css*/
+@media screen and (max-width: 900px) {
+    header  {
+        display: block;
+        height: auto;
+    }
+    nav, footer {
+        flex-direction: column;
+    }
+}

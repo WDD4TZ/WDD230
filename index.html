@@ -4,10 +4,55 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>zander wdd230 home page</title>
+    <link rel="stylesheet" href="styles/homePage.css">
+    <link rel="" href="styles/homePage.css">
 </head>
 <body>
-    <h1>testing</h1>
-    <h2>still testing</h2>
+    <header>
+    <h1>T Zander</h1>
+    <img src="images/me (4).jpg" alt="picture of me">
+    <h2>WDD230: Assignment Portal</h2>
+    </header>
+
+    <nav>
+    <ul>
+        <!--Be sure to link all future projects in the manner showed in li for lesson 02.-->
+       <li><!--<a href="lesson02.html">-->Lesson 02:<!--</a>--></li>
+       <li>Lesson 03:</li>
+       <li>Lesson 04:</li>
+       <li>Lesson 05:</li>
+       <li>Lesson 06:</li>
+       <li>Lesson 07:</li>
+       <li>Lesson 08:</li>
+       <li>Lesson 09:</li>
+       <li>Lesson 10:</li>
+       <li>Lesson 11:</li>
+    </ul>   
+</nav>
+
+<footer>&copy; T. Zander | Utah
+    <p id = "date"></p>
+</footer>
+<script>
+    const d = new Date();
+    const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+    document.getElementById("date").innerHTML = d;
+</script>
+
+
+
+
+
+
+<!--<script>
+    document.getElementById(date).innerhtml
+    function dynamicDate() {
+    let now = new Date();
+    let month = now.getMonth();
+    let dayOfMonth = now.getDate();
+    let dayOfWeek = now.getDay();
+    month++}
+</script>-->
 </body>
 </html>
