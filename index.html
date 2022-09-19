@@ -6,19 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>zander wdd230 home page</title>
     <link rel="stylesheet" href="styles/homePage.css">
-    <link rel="" href="styles/homePage.css">
 </head>
 <body>
     <header>
     <h1>T Zander</h1>
-    <img src="images/me (4).jpg" alt="picture of me">
-    <h2>WDD230: Assignment Portal</h2>
+    <img src="images/me(4).jpg" alt="picture of me">
     </header>
-
+    <h2>WDD230: Assignment Portal</h2>
+<main>
     <nav>
+    
     <ul>
         <!--Be sure to link all future projects in the manner showed in li for lesson 02.-->
-       <li><!--<a href="lesson02.html">-->Lesson 02:<!--</a>--></li>
+       <li><a href="styles/normalize.css">Lesson 02: Normalize</a> </li>
        <li>Lesson 03:</li>
        <li>Lesson 04:</li>
        <li>Lesson 05:</li>
@@ -29,22 +29,20 @@
        <li>Lesson 10:</li>
        <li>Lesson 11:</li>
     </ul>   
-</nav>
+    </nav>
+</main>
 
-<footer>&copy; T. Zander | Utah
-    <p id = "date"></p>
+<footer>
+    <p>&copy; <span id="currentDate"></span> | T. Zander | Utah</p>
+    <p>Last Modified <span id="lastModified"></span></p>
 </footer>
 <script>
     const d = new Date();
-    const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
-    document.getElementById("date").innerHTML = d;
+    const options = {year: "numeric"};
+    const time = {year: "numeric", month: "long", day: "numeric"};
+    document.getElementById("currentDate").textContent = d.toLocaleDateString("en-US", options);
+    document.getElementById("lastModified").textContent = document.lastModified;
 </script>
-
-
-
-
-
-
 <!--<script>
     document.getElementById(date).innerhtml
     function dynamicDate() {
