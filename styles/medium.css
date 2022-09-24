@@ -1,0 +1,9 @@
+@media screen and (max-width: 900px) {
+    header  {
+        display: block;
+        height: auto;
+    }
+    nav, footer {
+        flex-direction: column;
+    }
+}

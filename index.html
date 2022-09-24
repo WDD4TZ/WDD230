@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Tamara Zander Portal Page for WDD230">
     <title>zander wdd230 home page</title>
-    <link rel="stylesheet" href="styles/homePage.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
 </head>
 <body>
     <header>
@@ -17,8 +19,8 @@
     <nav>
     
     <ul>
-        <!--Be sure to link all future projects in the manner showed in li for lesson 02.-->
-       <li><a href="styles/normalize.css">Lesson 02: Normalize</a> </li>
+        <!--Be sure to link all future projects-->
+       <li>Lesson 02:</li>
        <li>Lesson 03:</li>
        <li>Lesson 04:</li>
        <li>Lesson 05:</li>
@@ -36,21 +38,8 @@
     <p>&copy; <span id="currentDate"></span> | T. Zander | Utah</p>
     <p>Last Modified <span id="lastModified"></span></p>
 </footer>
-<script>
-    const d = new Date();
-    const options = {year: "numeric"};
-    const time = {year: "numeric", month: "long", day: "numeric"};
-    document.getElementById("currentDate").textContent = d.toLocaleDateString("en-US", options);
-    document.getElementById("lastModified").textContent = document.lastModified;
-</script>
-<!--<script>
-    document.getElementById(date).innerhtml
-    function dynamicDate() {
-    let now = new Date();
-    let month = now.getMonth();
-    let dayOfMonth = now.getDate();
-    let dayOfWeek = now.getDay();
-    month++}
-</script>-->
+<script src="scripts/homePage.js"></script>
+
 </body>
+
 </html>
