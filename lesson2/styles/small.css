@@ -1,14 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
 
+#container {
+    display: grid;
+    grid-template-columns: 1fr;
+}
 body {
     padding: 20px;
+    max-width: 1000px;
     
 }
 header {
     background-color: rgb(159, 159, 161);
     color: rgb(1,1,63);
     font-family: poppins;
-    grid-row: 1/2;
     height: 125px;
     margin: 0 auto;
     padding: 20px;
@@ -28,8 +32,10 @@ h2, h3 {
     color: rgb(1,1,63);
 }
 .first-column {
-    grid-row: 2/3;
     margin: 0 auto;
+}
+img {
+    width: 100%;
 }
 
 
